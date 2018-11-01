@@ -1,0 +1,28 @@
+@import url(sanitize.css);
+
+h1{
+    font-size: 24px; 
+    margin : 0px;
+}
+
+.content {
+    background-color:#fff;
+    width: 600px;
+    margin : 10px auto;
+
+    border: 1px solid #d1d1d1;
+    /*
+    border-width : 1px;
+    border-style : solid;
+    border-top : 10px;
+    */
+    padding: 30px; 
+
+}
+input{
+    border: 0;
+    border-bottom: 1px  solid #d1d1d1;
+    width: 100%;
+    font-size: 1.2em;
+    padding:8px;
+}
