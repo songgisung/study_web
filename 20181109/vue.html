@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>My Photos</title>
+</head>
+<body>
+    <header>
+        <h1>My Photos</h1>
+    </header>
+    
+    <div class="container">
+        <div id="img_unit">
+                <div class = "photo" v-for = "Photo in Photos">
+                    <img :src = "Photo.path">
+                    <div class = "inner"><p>{{ Photo.caption }}<span>{{ Photo.name }}</span></p></div>
+                </div>
+        </div> 
+    </div>
+
+    <script src ="jquery/jquery.min.js"></script>
+    <script src ="https://unpkg.com/vue"></script>
+    <script>
+
+        var app  = new Vue({
+            el : '#img_unit',
+            data :{
+                Photos : []
+            },
+            created: function(){
+                var self = this;
+                $.getJSON('https://h2o-space.com/htmlbook/images.php', function(data){
+                    self.Photos = data;
+                });
+             }
+        });
+
+        //$('#img_unit').html('여기에');
+        //$('#img_unit').css('margin-top','100px')
+        //method chin 
+        //$('#img_unit').html('여기에').css('margin-top','100px')// 위와 같은 메소드 체인
+        /*
+        $.getJSON('https://h2o-space.com/htmlbook/images.php', function(data){
+            //alert('데이터를 보존합니다.');
+            for(var i = 0; i < data.length;i++){
+                $('<div class="photo"></div>').append('<img src="' + data[i].path + '">').append('<div class="inner"><p>' + data[i].caption + '<span>' + data[i].name + '</span></p></div>').appendTo('#img_unit');
+            }
+        });
+
+        var app = new Vue({
+            el : '#vue_unit',
+            data :{
+                message : 'Vue.js????????',
+                greeting : 'konnichiwa'
+            }
+        })
+        */
+    </script>
+</body>
+</html>
