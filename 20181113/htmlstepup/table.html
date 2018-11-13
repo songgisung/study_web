@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>テーブルの練習</title>
+  </head>
+  <body>
+    <h2＞シンプルな表</h2>
+    <table border ="1">
+      <tr><!--table row 略語（りゃくご）-->
+        <th>姓</th><!--table header-->
+        <th>名</th>
+      </tr>
+      <tr><!--table row 略語（りゃくご）-->
+        <th>山田</th><!--table data cell-->
+        <th>犬目</th>
+      </tr>
+      <tr><!--table row 略語（りゃくご）-->
+        <th>田中</th><!--table data cell-->
+        <th>花子</th>
+      </tr>
+
+    </table>
+
+    <h2>thead tfoot, tbody </h2>
+    <!--thead -> table header
+    tfoot -> table footer
+    tbody -> table body -->
+
+    <table border ="1">
+      <thead>
+        <tr>
+          <th>ヘッダ−１</th>
+          <th>ヘッダ−２</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>データ１</td>
+          <td>データ２</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>フッター１</td>
+          <td>フッター２</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>セルの結合（けつごう）</h2>
+    <h3>横に結合</h3>
+    <table border = "1">
+      <tr>
+        <th colspan="3">横に結合</th><!--cell　merge-->
+      </tr>
+      <tr>
+        <td>データ１</td>
+        <td>データ2</td>
+        <td>データ3</td>
+      </tr>
+    </table>
+    <h3>縦に結合</h3>
+    <table border ="1">
+      <tr>
+        <td rowspan = "3">縦方向に結合</td>
+        <td>データ１</td>
+      </tr>
+      <tr>
+        <td>データ2</td>
+      </tr>
+      <tr>
+        <td>データ3</td>
+      </tr>
+
+    </table>
+    <h2>caption</h2>
+    <table border = "1">
+      <caption>caption</caption>
+      <tr>
+        <td>データ１</td>
+        <td>データ2</td>
+        <td>データ3</td>
+      </tr>
+
+    </table>
+  </body>
+</html>
