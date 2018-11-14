@@ -1,0 +1,19 @@
+body{
+ /*  background-color:#CCCCCC; */
+
+ background-image: url(../image/dot.png);
+ background-repeat: no-repeat;
+ background-position: left;
+}
+
+h2{
+  background-color:#4587BD;
+
+/*
+　border-style:solid;
+  border-color:#E2B483;
+  border-width:10px;*/
+  border: #e2b483 10px solid;
+
+  color:#fff;
+}
