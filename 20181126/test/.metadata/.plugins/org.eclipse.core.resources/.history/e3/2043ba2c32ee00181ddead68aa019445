@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.table_{
+	border-color: black;
+	margin:0px;
+	font-size: 20px;
+	border: 10px black solid;
+}
+.cell{
+	/*  */border:black 10px solid;
+}

@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>게시판 글리스트</h1>
+		<table">
+			<tr>
+				<th>番号</th>
+				<th>題目</th>
+				<th>作成人</th>
+				<th>日数</th>
+				<th>クリック数</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>hello board</td>
+				<td>sgs</td>
+				<td>2018/11/22</td>
+				<td>0</td>
+			</tr>
+		</table>
+
+</body>
+</html>

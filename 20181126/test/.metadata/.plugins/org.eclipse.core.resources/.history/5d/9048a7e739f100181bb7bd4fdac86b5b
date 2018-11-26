@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.container from tr{
+	font-color:red;
+}
+
+tr{
+	font-size: 50px;
+}

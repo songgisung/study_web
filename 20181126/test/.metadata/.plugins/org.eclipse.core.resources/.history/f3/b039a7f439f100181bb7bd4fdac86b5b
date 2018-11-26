@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+console.log("aaa");
+.container from tr{
+	font-color:red;
+}
+
+tr{
+	font-size: 50px;
+}

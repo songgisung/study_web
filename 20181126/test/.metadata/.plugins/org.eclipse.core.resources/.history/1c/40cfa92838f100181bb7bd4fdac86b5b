@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<a rel="stylesheet" href=css/BoardWriter.css""
+<title>게시판 작</title>
+</head>
+<body>
+	<from action="indet.html" method="post">
+		제목<input type="text" name="title" /><br/>
+		날짜<input type="text" name="redate" /><br/>
+		이름<input type="text" name="writer" /><br/>
+		<input type="submit" value="저장">
+	</from>
+</body>
+</html>
