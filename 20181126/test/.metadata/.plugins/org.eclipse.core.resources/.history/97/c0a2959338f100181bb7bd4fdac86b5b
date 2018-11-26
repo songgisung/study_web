@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+.submitbutton{
+	color: red;
+	font-color:red;
+}

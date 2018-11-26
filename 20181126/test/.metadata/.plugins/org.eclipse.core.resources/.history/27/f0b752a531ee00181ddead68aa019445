@@ -1,0 +1,5 @@
+@charset "UTF-8";
+.table_{
+	border-color: black;
+	margin: 0px;
+}

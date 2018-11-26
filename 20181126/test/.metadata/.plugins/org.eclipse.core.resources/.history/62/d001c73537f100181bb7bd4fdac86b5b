@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시판 작</title>
+</head>
+<body>
+	<diy class="container">
+		<input type="text" name="title" /><br/>
+		<input type="text" name="redate" /><br/>
+		<input type="text" name="writer" /><br/>
+		
+	</diy>>
+</body>
+</html>
